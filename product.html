@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="product.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+      integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <style>
+    
+
+    </style> -->
+  </head>
+  <body>
+    <div>
+      <div id="header">
+        <div id="headertop">
+          <div id="imgheadicon">
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
+              alt=""
+            />
+          </div>
+        
+          <div id="searchthing">
+           
+                  <a href="" id="selectpincode">selet pincode</a>
+            
+            <input id="searchinput" type="text" />
+            <div id="searchicon">
+              <svg viewBox="0 0 24 24" width="25">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M15.866 14.32h-.817l-.284-.282a6.658 6.658 0 0 0 1.613-4.349 6.689 6.689 0 1 0-6.689 6.69 6.66 6.66 0 0 0 4.348-1.612l.284.282v.815L19.465 21l1.534-1.534-5.133-5.146zm-6.177 0a4.63 4.63 0 1 1 0-9.262 4.63 4.63 0 0 1 0 9.262z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="headerbottom">
+          <div id="left">
+            <a href=""> Order Medicine</a>
+            <a href="">Health care products</a>
+            <a href="">Lab Tests</a>
+           
+          </div>
+          <div id="right">
+            <a href="">
+              <div>
+                <img
+                  src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
+                  alt=""
+                />
+              </div>
+              <div>offer</div></a
+            >
+            <a href="">
+              <div>
+                <img
+                  src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
+                  alt=""
+                />
+              </div>
+              <div>User</div></a
+            >
+            <a href="">
+              <div>
+                <img
+                  src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
+                  alt=""
+                />
+              </div>
+                <div>
+                cart
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+  
+   
+    <div class="ordercontainer">
+      <div class="orderingprocess">
+        <h6><a href="index.html">Home </a></h6>
+        <a href=""><h6>Medicine order online</h6></a>
+      </div>
+
+      
+    
+       
+      
+    <h2 class="text">Order Medicines Online</h2>
+    <div class="orderonline">
+        <div class="search">
+            <img class="img"
+                src="https://cdn-icons.flaticon.com/png/512/2956/premium/2956869.png?token=exp=1645771568~hmac=e21ba5623478c92d29e3a3ae0b790353">
+            <P  >
+               <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FvaluePropDisc.svg&w=16&q=75">Flat 18% Off</P>
+            <p >
+              <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FvaluePropProd.svg&w=16&q=75">1 Lakh+Products</p>
+            <p>
+              <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FvaluePropReturn.svg&w=16&q=75">
+              Easy Returns</p>
+
+        </div>
+        <h2 >Search for Medicines / Healthcare Products </h2>
+        <div class="searchproduct">
+            <select class="pincode">
+                <option >Select Pincode</option>
+            </select>
+            <input id="searchvalue" class="input" type="search"
+                placeholder="Search for Medicines / Healthcare Products @" onkeypress="searchdata()">
+            <!-- <i id="searchicon1" class="fa-solid fa-magnifying-glass"></i> -->
+        </div>
+    </div>
+
+      <div class="slider-container">
+        <ul
+          class="controls"
+          id="customize-controls"
+          aria-label="Carousel Navigation"
+          tabindex="0"
+        >
+          <li
+            class="prev"
+            data-controls="prev"
+            aria-controls="customize"
+            tabindex="-1"
+          >
+            <i class="fas fa-angle-left fa-5x"></i>
+          </li>
+          <li
+            class="next"
+            data-controls="next"
+            aria-controls="customize"
+            tabindex="-1"
+          >
+            <i class="fas fa-angle-right fa-5x"></i>
+          </li>
+        </ul>
+        <div class="my-slider">
+          <img
+            src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fconsumer-app-images.pharmeasy.in%2Fmarketing%2Fcomp_3step.jpg&w=640&q=75"
+            alt=""
+          />
+          <img
+            src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fconsumer-app-images.pharmeasy.in%2Fmarketing%2Fcomp_india_covered.jpg&w=640&q=75"
+            alt=""
+          />
+          <img
+            src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fconsumer-app-images.pharmeasy.in%2Fmarketing%2Fcomp_50lac.jpg&w=640&q=75"
+            alt=""
+          />
+          <img
+            src="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fconsumer-app-images.pharmeasy.in%2Fmarketing%2Fcomp_cod.jpg&w=640&q=75"
+            alt=""
+          />
+         
+
+        </div>
+      </div>
+      <h1>What our customer say</h1>
+      <div class="custommy-slider">
+        <div class="customerslider-item">
+          <h3>Rohini sarkar</h3>
+          <p>April21,2020</p>
+          <div class="reviewcontent">
+            <p>
+              Very helpful and friendly app in terms of usability, customer
+              support & money saving from the point of medical necessity of
+              every person.
+            </p>
+          </div>
+        </div>
+        <div class="customerslider-item">
+          <h3>Varun sonagrar</h3>
+          <p>April 23,2020</p>
+          <div class="reviewcontent">
+            <p>
+              I've had a good experience. The consultation with a doctor feature
+              works well too. The prices and discounts are great too. Overall
+              the simplicity of the app is a plus too. I recommend this app.
+              Will always be a customer/user now! Genuinely!
+            </p>
+          </div>
+        </div>
+        <div class="customerslider-item">
+          <h3>Rajarshi Sarkar</h3>
+          <p>April 22,2020</p>
+          <div class="reviewcontent">
+            <p>
+              <q>""</q>
+              The app is really wonderful. Being a Product Manager myself, I
+              would say that the User experience (UI/UX) of the app is top notch
+              (easy to use, simple and convenient). Coming to services and
+              delivery, I would say Pharmeasy is doing a tremendous job even
+              during this unprecedented pandemic situation.
+            </p>
+          </div>
+        </div>
+        <div class="customerslider-item">
+          <h3>Darpan Dholakia</h3>
+          <p>April 23,2020</p>
+          <div class="reviewcontent">
+            <p>
+              Best service and app amongst all available. I have been using it
+              for more than 3 years, and even during the pandemic, they have
+              kept their standards high and are delivering the order within 24
+              hours. Keep up the good work.
+            </p>
+          </div>
+        </div>
+        <div class="customerslider-item">
+          <h3>Debanjana Roy</h3>
+          <p>April 18,2020</p>
+          <div class="reviewcontent">
+            <p>
+              Very helpful and friendly app in terms of usability, customer
+              support & money saving from the point of medical necessity of
+              every person.
+            </p>
+          </div>
+        </div>
+        <div class="customerslider-item">
+          <h3>Lipichowdary</h3>
+          <p>April 15,2020</p>
+          <div class="reviewcontent">
+            <p>
+              Very good app. Would recommend it to everyone requiring fast and
+              efficient delivery of medicinal products at the doorstep.
+            </p>
+          </div>
+        </div>
+        <div class="customerslider-item">
+          <h3>Rajarshi Sarkar</h3>
+          <p>April 22,2020</p>
+          <div class="reviewcontent">
+            <p>
+              The app is really wonderful. Being a Product Manager myself, I
+              would say that the User experience (UI/UX) of the app is top notch
+              (easy to use, simple and convenient). Coming to services and
+              delivery, I would say Pharmeasy is doing a tremendous job even
+              during this unprecedented pandemic situation.
+            </p>
+          </div>
+        </div>
+        <div class="customerslider-item">
+          <h3>Darpan Dholakia</h3>
+          <p>April 23,2020</p>
+          <div class="reviewcontent">
+            <p>
+              Best service and app amongst all available. I have been using it
+              for more than 3 years, and even during the pandemic, they have
+              kept their standards high and are delivering the order within 24
+              hours. Keep up the good work.
+            </p>
+          </div>
+        </div>
+        <div class="customerslider-item">
+          <h3>Darpan Dholakia</h3>
+          <p>April 23,2020</p>
+          <div class="reviewcontent">
+            <p>
+              Best service and app amongst all available. I have been using it
+              for more than 3 years, and even during the pandemic, they have
+              kept their standards high and are delivering the order within 24
+              hours. Keep up the good work.
+            </p>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+    <div class="roast">
+
+    <h2>India's No. 1 Medicine Delivery App</h2>
+
+    <p>
+      The concept of medicine home delivery has been taken to a new level by the
+      PharmEasy online medicine delivery app. You can use the PharmEasy online
+      medicine delivery app to browse through an extensive range of medicines.
+      Each medicine undergoes a 3-step quality check. Whatever be your medicinal
+      requirement, you are sure to locate it in this online pharmacy. All you
+      have to do then is to add it to your cart and place the order. In 3
+      hours*, the medicines will be delivered to you. India’s beloved online
+      medicine delivery app makes sure that you get your medicines in record
+      time because we know how vital time is in any treatment. Sit back, and we
+      will have all your medical necessities delivered to your doorstep.
+    </p>
+
+    <h3>Online Medicine - Your Online Medical Store in India</h3>
+    <p>Online Medicine - Your Online Medical Store in India</p>
+    <h3>Reasons To Buy Medicine Online From PharmEasy</h3>
+    <p>
+      Here are a few reasons that will convince you to give online medicine
+      order through the PharmEasy app -
+    </p>
+    <li>1,200+ cities and 20,000+ Pin codes served</li>
+    <li>Medicine delivery within 3 hours*</li>
+    <li>1 Lakh+ medicines available</li>
+    <li>Cash on delivery option available</li>
+    <li>Attractive offers</li>
+    <li>Cashback option through wallet</li>
+    <li>Stringent quality checks</li>
+    <li>
+      Garnered the trust of more than 10 million users who have made an online
+      purchase through PharmEasy
+    </li>
+    <h3>Get 3-Step Quality-checked Medicines</h3>
+    <p class="po">
+      PharmEasy is a one-stop-shop for all your healthcare needs. We have 1L+
+      products for you to choose from. Buy medicines online at affordable prices
+      from the comforts of your home in just a few clicks and get them delivered
+      at your doorstep. The entire process of shopping for medicines is
+      hassle-free and convenient. All you have to do is search for the products
+      you need on our website or app, add to cart and then proceed with the
+      checkout process. With our scheduled refill reminder, you don’t even need
+      to keep track of your refill dates. What’s more, we have great offers,
+      with added discounts and massive e-wallet cashbacks on purchasing
+      medicines!
+    </p>
+    
+  </div>
+      <div class="acc" >
+        <p >✅Is buying medicines onlines safe     </p><p>^</p> </div>
+        <div class="acc" >
+          <p > ✅How do I order medicines from PharmEasy?    </p><p>^</p> </div>
+          <div class="acc" >
+            <p >✅When will PharmEasy deliver my medicines?   </p><p>^</p> </div>
+            <div class="acc" >
+              <p >✅ Do I get discounts/cashback while ordering medicines online with PharmEasy?</p><p>^</p> </div>
+              <div class="acc" >
+                <p >Do I get discounts/cashback while ordering medicines online with PharmEasy? </p><p>^</p> </div>
+              <div class="acc" >
+                <p >✅ If a medicine that I want to order is currently unavailable then what should I do?</p><p>^</p> </div>
+              
+                  <div class="acc" >
+                    <p >✅ What is the shelf life of medicines being provided?</p><p>^</p> </div>
+                  <div class="acc" >
+                    <p >✅ How can I modify my order?</p><p>^</p> </div>
+                  <div class="acc" >
+                    <p >✅ How do I cancel my order?</p><p>^</p> </div>
+
+                    <div class="productreturn">
+                      <div>
+                        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FgenuineMedicine.svg&w=64&q=75" alt="">
+                        <h6>1 Lakh+ Products</h6>
+                        <p>We maintain strict quality controls on all our partner retailers, so that you always get standard quality products.</p>
+                      </div>
+                      <div>
+                        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FsecurePayment.svg&w=64&q=75" alt="">
+                        <h6>Secure Payment </h6>
+                        <p>100% secure and trusted payment protection</p>
+                      </div>
+                      <div>
+                        <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FeasyReturn.svg&w=64&q=75" alt="">
+                        <h6>Easy Return</h6>
+                        <p>We maintain strict quality controls on all our partner retailers, so that you always get standard quality products.We have a new and dynamic return window policy for medicines and healthcare items. Refer FAQs section for more details</p>
+                      </div>
+                  
+                   
+                    </div>
+                    <div class="footerimg">
+                     <div class="imgpharmaeasy">
+                       <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2FfooterMobile.jpg&w=256&q=75" alt="">
+                     </div>
+                     <div>
+                       <h2>Download the App for Free</h2>
+                      <div class="imgapple">
+                        <img src="https://assets.pharmeasy.in/web-assets/dist/83095c03.png" alt="">
+                        <img src="https://assets.pharmeasy.in/web-assets/dist/83095c03.png" alt="">
+                      </div>
+                      </div>
+
+                    </div>
+                    <div class="footer1">
+                      <div>
+                        <p>About Us</p>
+                
+                        <p>Careers</p>
+                        <p>Blog</p>
+                        <p>Partner with PharmEasy</p>
+                        <p>Sell at PharmEasy</p>
+                        <p>Our Services</p>
+                        <p>Order Medicine</p>
+                        <p>Healthcare Products</p>
+                        <p>Lab Tests</p>
+                        <p>Featured</p>
+                      </div>
+                      <div>
+                        <p>Featured Categories</p>
+                
+                        <p>Personal Cares</p>
+                        <p>BHealth Food and Drinks</p>
+                        <p>Skin Care</p>
+                        <p>Home Care</p>
+                        <p>Ayurvedic Care</p>
+                        <p>Sexual Wellness</p>
+                        <p>Fitness & Supplements</p>
+                        <p>Mother and Baby Care/p></p>
+                        <p>Healthcare Devices</p>
+                        <p>Surgicals and Dressings</p>
+                        <p>Covid Essentials</p>
+                        <p>Health Condition</p>
+                        <p>Diabetic Care</p>
+                        <p>Healthcare Devices</p>
+                      </div>
+                      <div>
+                        <p>About Us</p>
+                
+                        <p>Careers</p>
+                        <p>Blog</p>
+                        <p>Partner with PharmEasy</p>
+                        <p>Sell at PharmEasy</p>
+                        <p>Our Services</p>
+                        <p>Order Medicine</p>
+                        <p>Healthcare Products</p>
+                        <p>Lab Tests</p>
+                        <p>Featured</p>
+                      </div>
+                      <div>
+                        <h4>FOLLOW US</h4>
+                        <div class="socialmedia">
+                          <a href="">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/128/87/87390.png"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="data:image/png;base64,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"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://cdn-icons.flaticon.com/png/128/2504/premium/2504848.png?token=exp=1648665355~hmac=f6359781927e443fe6e349146d2c2cbd"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/128/145/145812.png "
+                              alt=""
+                          /></a>
+                        </div>
+                      </div>
+                
+                      <div class="socialmedia1">
+                        <h4>Our Payment Partners</h4>
+                
+                        <div class="paymentpartner">
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg"
+                              alt=""
+                          /></a>
+                          <a href="">
+                            <img
+                              src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg"
+                              alt=""
+                          /></a>
+                        </div>
+                      </div>
+                
+                  
+    
+                    </div>
+    </div>
+  </body>
+</html>
+
+<script src="product.js">
+  
+
+  
+</script>
