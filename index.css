@@ -28,14 +28,14 @@
   margin: 0px;
   padding: 0px;
 }
-#headerbottom  #right {
-    display: flex;
-    align-items: center;
-    /* background-color: aqua; */
+#headerbottom #right {
+  display: flex;
+  align-items: center;
+  /* background-color: aqua; */
 }
-#headerbottom  #right a{
-    display: flex;
-    /* align-items: center;
+#headerbottom #right a {
+  display: flex;
+  /* align-items: center;
     background-color: aqua; */
 }
 #headertop {
@@ -48,46 +48,71 @@
 #imgheadicon img {
   height: 40px;
 }
+#searchicon svg {
+  fill: #333; /* Change color of search icon */
+}
+
+#searchinput:focus + #searchicon svg {
+  fill: #fff; /* Change color of search icon when input is focused */
+}
+
+#searchinput:focus + #searchicon:after {
+  content: attr(
+    value
+  ); /* Show input value next to search icon when input is focused */
+  position: absolute;
+  top: 0;
+  right: -70px;
+  padding: 0 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 30px;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#searchinput:not(:focus) + #searchicon:after {
+  opacity: 0; /* Hide input value next to search icon when input is not focused */
+}
 
 #searchthing {
   display: flex;
- flex:1;
- margin-left:5%;
+  flex: 1;
+  margin-left: 5%;
 }
 #searchinput {
-  height:27px;
+  height: 27px;
   width: 100%;
   border: 1px solid gray;
-  border-left:0px;
+  border-left: 0px;
   border-radius: 5px;
-  
-
 }
 /* #right {
   display: flex;
   align-items: center;
 } */
 
-#selectpincode{
-    text-decoration:none;
-    color: rgb(16, 132, 126);
-    padding: 2px 10px;
-    background-color: white;
-    width:20%;
-    height:25px;
-    border: 1px solid grey;
-    border-right:0px;
-    border-radius: 5px;
-    margin-right: -40px;
+#selectpincode {
+  text-decoration: none;
+  color: rgb(16, 132, 126);
+  padding: 2px 10px;
+  background-color: white;
+  width: 20%;
+  height: 25px;
+  border: 1px solid grey;
+  border-right: 0px;
+  border-radius: 5px;
+  margin-right: -40px;
 }
 
-#searchicon{
-    margin-left:-40px;
-
+#searchicon {
+  margin-left: -40px;
 }
 
-#left{
-    margin-left: 16%;
+#left {
+  margin-left: 16%;
 }
 #navbar {
   background-color: aquamarine;
@@ -105,6 +130,33 @@
 ._1d9Ep {
   margin-top: 80px;
   padding: 10px;
+}
+.fetabrand {
+  margin-top: 50px;
+}
+
+.fetabrand h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.productslider-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.productmy-slider {
+  display: flex;
+  width: calc(100% * 12);
+  transition: transform 0.5s ease;
+}
+
+.productmy-slider img {
+  width: calc(100% / 12);
+  height: auto;
 }
 
 .header-container {
@@ -170,7 +222,6 @@
   justify-content: space-between;
   width: 75%;
   margin: auto;
-  
 }
 
 #offerproduct div img {
@@ -188,7 +239,7 @@
   height: 42px;
   border-radius: 10px;
   margin-top: 230px;
-  top:300px;
+  top: 300px;
   margin-left: 10px;
   border: none;
 }
@@ -211,9 +262,9 @@
   height: 200px;
   width: 100%;
   z-index: 2;
-    width: 100%;
+  width: 100%;
 }
-.inner-staticorder{
+.inner-staticorder {
   height: 100px;
   border-radius: 5px;
 }
@@ -227,7 +278,7 @@
   font-size: 20px;
   padding-right: 15px;
   justify-content: space-between;
-    line-height: 1.5;
+  line-height: 1.5;
 }
 .inner-staticorder:nth-child(1) {
   background-color: aquamarine;
@@ -268,14 +319,13 @@ h3 {
   margin: 10px;
   height: 300px;
   width: 100%;
-  
 }
 .staticorder img {
   width: 115px;
   height: 200px;
 }
-p{
-  font-family:sans-serif;
+p {
+  font-family: sans-serif;
 }
 #plus img {
   width: 30%;
@@ -318,7 +368,7 @@ p{
   font-size: 12px;
   font-family: sans-serif;
   line-height: 18px;
-  text-decoration: none solid rgb(79,88,94);
+  text-decoration: none solid rgb(79, 88, 94);
 }
 .slider-offer div {
   width: 80%;
@@ -337,9 +387,9 @@ p{
 .labmy-slider {
   position: relative;
 }
-#labcolor{
-  background-color:rgb(212,226,250);
-  width:100%;
+#labcolor {
+  background-color: rgb(212, 226, 250);
+  width: 100%;
   height: 250px;
 }
 .labslider-item {
@@ -348,27 +398,26 @@ p{
   padding: 1.5rem 0.75rem;
   height: 200px;
   /* height: 400px; */
-  width:90%;
-  
+  width: 90%;
 }
 /* ================ */
-.imgofman{
-display: flex;
-background-color: indigo;
-justify-content: space-between;
-/* height:100px; */
-width:90%;
-margin:auto;
-/* margin: 0 0 60px 0; */
-padding:60px 0 0 0;
-/* background-color:#A291fA; */
-min-height: 94px;
-background-image: url("	https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg");
+.imgofman {
+  display: flex;
+  background-color: indigo;
+  justify-content: space-between;
+  /* height:100px; */
+  width: 90%;
+  margin: auto;
+  /* margin: 0 0 60px 0; */
+  padding: 60px 0 0 0;
+  /* background-color:#A291fA; */
+  min-height: 94px;
+  background-image: url("	https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg");
 }
-.imgofman p{
+.imgofman p {
   font-size: 16px;
 }
-.imgofman>img:nth-child(2){
+.imgofman > img:nth-child(2) {
   width: 100%;
   height: 200px;
 }
@@ -391,30 +440,30 @@ background-image: url("	https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg
   <div>A</div>
   <div>B</div>
 </div> */
-#primary{
+#primary {
   display: flex;
   justify-content: space-between;
 }
-#secondary{
+#secondary {
   display: flex;
 }
-#seealloffer{
+#seealloffer {
   display: flex;
 }
-#offerhead{
+#offerhead {
   display: flex;
   width: 90%;
   justify-content: space-between;
 }
-.imgofman img{
+.imgofman img {
   height: 41.9922px;
-  width:210px;
+  width: 210px;
 
   max-width: 210px;
   max-height: 100%;
   display: inline;
 }
-.imgofman img:nth-child(2){
+.imgofman img:nth-child(2) {
   width: 100%;
 }
 /* ========== */
@@ -465,10 +514,10 @@ background-image: url("	https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg
   background-color: green !important;
 }
 .labs {
-  height:140.99px;
-  width:267.318px;
+  height: 140.99px;
+  width: 267.318px;
   /* background-color:blue; */
-  display:block;
+  display: block;
 }
 
 .Featuredmy-slider {
@@ -486,9 +535,9 @@ background-image: url("	https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg
 .badges {
   display: flex;
   height: 23.9974px;
-  width:222.318px;
+  width: 222.318px;
   margin: 0 0 15px 0;
-  text-align:left;
+  text-align: left;
   line-height: 20px;
   font-size: 16px;
   /* min-height:auto;
@@ -496,7 +545,6 @@ background-image: url("	https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg
   /* display: block; */
   font-family: "Open Sans", sans-serif;
 }
-
 
 .productslider-container {
   width: 90%;
@@ -545,7 +593,7 @@ background-image: url("	https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg
   justify-content: center;
   padding: 10px 20px;
 }
-.dealsoftheday{
+.dealsoftheday {
   display: flex;
   color: red;
   justify-content: space-between;
@@ -557,7 +605,7 @@ background-image: url("	https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg
   height: 200px;
 }
 
-.healtharticle{
+.healtharticle {
   color: pink;
 }
 a {
@@ -651,7 +699,7 @@ a {
   cursor: pointer;
 }
 .contentdesc {
-  background-color:#f2fff8;
+  background-color: #f2fff8;
   margin: 2px 5px;
   height: 300px;
   justify-content: center;
@@ -790,7 +838,7 @@ a {
 .badges img {
   height: 23.9974px;
   width: 23.9974px;
-  margin:0 15px 0 0;
+  margin: 0 15px 0 0;
   min-height: auto;
   min-width: auto;
 }
